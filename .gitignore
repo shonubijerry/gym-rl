@@ -2,3 +2,4 @@
 .DS_Store
 saves
 __pycache__
+client_secret.json
