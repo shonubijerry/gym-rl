@@ -51,7 +51,7 @@ def preprocess_frame(frame):
     return frame
 
 def transform(frame, add_batch=True):
-    """transform the state (210, 160, 3) to tensor (1, 3, 210, 160) or (3, 210, 160)"""
+    """transform the state (210, 160, 3) to tensor (1, 3, 160, 160) or (3, 160, 160)"""
     transformer = transforms.Compose([
         transforms.ToPILImage(),  # Convert to PIL Image
         transforms.Resize((160, 160)),  # Resize the image
